@@ -6,7 +6,7 @@
 
 1. 将整个 `ComfyUI_CameraRaw` 文件夹复制到 `ComfyUI/custom_nodes/` 目录
 2. 重启 ComfyUI
-3. 在节点菜单中找到 `image/postprocessing/camera_raw` 分类下的节点
+3. 在节点菜单中找到 `🔵BB Camera Raw` 分类下的节点
 
 ## 节点列表
 
@@ -39,54 +39,13 @@
 9. **🔵BB Camera Raw - 校准**
    - 阴影色调、原色调整
 
-## 使用说明
-
-### 基础工作流
-
-```
-加载图像 → 亮度调整 → 颜色调整 → 效果调整 → 保存图像
-```
-
-### 完整工作流
-
-```
-加载图像 → 校准 → 亮度调整 → 曲线调整 → 颜色调整 → HSL 混色器 → 颜色分级 → 效果调整 → 细节调整 → 光学调整 → 保存图像
-```
-
-### 灵活组合
-
-可以根据需要只使用部分节点，例如：
-- 只需要调色：加载图像 → 颜色调整 → 保存图像
-- 只需要锐化：加载图像 → 细节调整 → 保存图像
-
-## 节点参数说明
-
-所有参数标签都已中文化，具体参数说明请参考各个节点的工具提示。
-
 ## 依赖
 
 - 基础依赖：torch, numpy, PIL
 - 可选依赖：scipy（用于更高质量的图像处理，如果没有会自动降级到 PIL 实现）
 
-## 文件结构
-
-```
-ComfyUI_CameraRaw/
-├── __init__.py          # 插件入口，注册所有节点
-├── utils.py            # 工具类（RGB/HSV 转换）
-├── brightness.py       # 亮度调整节点
-├── color.py            # 颜色调整节点
-├── effects.py          # 效果调整节点
-├── curves.py           # 曲线调整节点
-├── hsl.py              # HSL 混色器节点
-├── color_grading.py    # 颜色分级节点
-├── details.py          # 细节调整节点
-├── optics.py           # 光学调整节点
-├── calibration.py     # 校准节点
-└── README.md           # 说明文档
-```
-
 ## 许可证
 
 MIT License
+
 
