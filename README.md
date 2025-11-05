@@ -2,6 +2,9 @@
 
 一个完整的 Camera Raw 滤镜插件，包含 9 个独立的功能节点。
 
+<img width="1271" height="728" alt="ScreenShot_2025-11-05_100959_962" src="https://github.com/user-attachments/assets/dde05a34-8e6a-460b-9dd8-b08f285e7ba6" />
+
+
 ## 安装
 
 1. 将整个 `ComfyUI_CameraRaw` 文件夹复制到 `ComfyUI/custom_nodes/` 目录
@@ -47,5 +50,6 @@
 ## 许可证
 
 MIT License
+
 
 
