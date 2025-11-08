@@ -1,7 +1,10 @@
 # ComfyUI Camera Raw 插件
 
 参考 Photoshop Camera Raw 滤镜的图像调整插件，提供7个独立的图像调整节点。
+
 <img width="1011" height="799" alt="333" src="https://github.com/user-attachments/assets/a0bb0276-5c17-4b5f-83f5-18510885a351" />
+
+PS：商用平台方使用请告知！！！
 
 ## 安装
 
@@ -94,5 +97,6 @@ HSL 颜色混合器，可调整8种颜色的色相、饱和度和亮度：
 - numpy >= 1.21.0
 - Pillow >= 9.0.0
 - scipy >= 1.7.0
+
 
 
